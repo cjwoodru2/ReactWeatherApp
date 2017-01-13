@@ -1,14 +1,13 @@
 var React = require('react');
 
-var WeatherMessage = React.createClass({
-	render: function() {
-		var temp;
-		var city;
-		return (
-			<p>It is currently {temp} in {city}</p>
-		);
-	}
-})
+// NOTE: Below uses ES6 destructuring -
+// Instead of passing props and destructing below just use it in
+// the pass
+var WeatherMessage = ({temp, city}) => {
+	return (
+		<p>It is currently {temp} in {city}</p>
+	)
+}
 	
 
 module.exports = WeatherMessage;
