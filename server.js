@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3000
 
 app.use(express.static("public"));
 
-app.user (function (req, res, next) {
+app.use(function (req, res, next) {
 	if (req.headers['x-forwarded-pronto'] === 'http') {
 		next();
 	} else {
