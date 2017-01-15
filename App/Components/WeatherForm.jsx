@@ -16,12 +16,12 @@ var WeatherForm = React.createClass({
 			<div>
 				<form onSubmit={this.onFormSubmit}>
 					<input type="text" ref="city" placeholder="Your city"></input>
-					<button>Submit</button>
+					<button className="button expanded hollow">Submit</button>
 				</form>
-			</div>	
+			</div>
 		);
 	}
 })
-	
+
 
 module.exports = WeatherForm;

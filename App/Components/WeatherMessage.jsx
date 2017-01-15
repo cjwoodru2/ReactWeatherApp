@@ -5,9 +5,9 @@ var React = require('react');
 // the pass
 var WeatherMessage = ({temp, city}) => {
 	return (
-		<p>It is currently {temp} in {city}</p>
+		<h3 className="text-center">It is currently {temp} in {city}</h3>
 	)
 }
-	
+
 
 module.exports = WeatherMessage;
