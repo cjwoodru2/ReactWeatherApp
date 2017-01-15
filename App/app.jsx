@@ -7,7 +7,9 @@ var React           = require("react"),
 
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 
-
+// Laod foundation
+require("style!css!foundation-sites/dist/foundation.min.css");
+$(document).foundation();
 
 ReactDOM.render(
 	<Router history={hashHistory}>
