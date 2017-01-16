@@ -1,7 +1,7 @@
 var axios = require("axios");
 
 const OPEN_WEATHER_MAP_URL = "http://api.openweathermap.org/data/2.5/weather?APPID=6e347d6a45be96e6961dd197c8462ba9&units=imperial" ;
-	// api.openweathermap.org/data/2.5/forecast/city?id=524901&APPID=1111111111 
+	// api.openweathermap.org/data/2.5/forecast/city?id=524901&APPID=1111111111
 	// 6e347d6a45be96e6961dd197c8462ba9
 
 module.exports = {
@@ -15,8 +15,8 @@ module.exports = {
 			} else {
 				return res.data.main.temp;
 			}
-		}, function (res) {
-			throw new Error(res.data.message);
-		});
+		}, function() {
+  throw new Error('Unable to fetch weather.');
+});
 	}
 }
